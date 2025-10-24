@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio Esperanza Canina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-heart"></i>
+                    <span>Esperanza Canina</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#perros">Nuestros Perros</a></li>
+                    <li><a href="#adopcion">Adopción</a></li>
+                    <li><a href="#donaciones">Donaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Dale una segunda oportunidad a un amigo fiel</h1>
+                <p>En Refugio Esperanza Canina rescatamos, cuidamos y encontramos hogares amorosos para perros abandonados.</p>
+                <div class="hero-buttons">
+                    <a href="#adopcion" class="btn btn-primary">Adoptar Ahora</a>
+                    <a href="#donaciones" class="btn btn-secondary">Donar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Perro feliz">
+            </div>
+        </section>
+
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-dog"></i>
+                        <h3>250+</h3>
+                        <p>Perros Rescatados</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-home"></i>
+                        <h3>180+</h3>
+                        <p>Adopciones Exitosas</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>5</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <h3>50+</h3>
+                        <p>Voluntarios Activos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="perros" class="dogs-section">
+            <div class="container">
+                <h2>Conoce a Nuestros Perros</h2>
+                <p class="section-subtitle">Cada uno tiene una historia única y está esperando encontrar su hogar perfecto</p>
+                <div class="dogs-grid" id="dogs-container">
+                    <!-- Los perros se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="adopcion" class="adoption-section">
+            <div class="container">
+                <h2>Proceso de Adopción</h2>
+                <div class="adoption-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Conoce a los Perros</h3>
+                        <p>Visita nuestro refugio y conoce a nuestros perros disponibles para adopción.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Completa la Solicitud</h3>
+                        <p>Llena nuestro formulario de adopción con información sobre tu hogar y experiencia.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Entrevista</h3>
+                        <p>Tendremos una conversación para asegurar la mejor compatibilidad.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>¡Bienvenido a Casa!</h3>
+                        <p>Completa la adopción y lleva a tu nuevo mejor amigo a casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donaciones" class="donations-section">
+            <div class="container">
+                <h2>Ayúdanos a Seguir Salvando Vidas</h2>
+                <p>Tu donación nos permite continuar rescatando, alimentando y cuidando a más perros necesitados.</p>
+                <div class="donation-options">
+                    <div class="donation-card">
+                        <h3>Donación Única</h3>
+                        <div class="donation-amounts">
+                            <button class="amount-btn" data-amount="10">$10</button>
+                            <button class="amount-btn" data-amount="25">$25</button>
+                            <button class="amount-btn" data-amount="50">$50</button>
+                            <button class="amount-btn" data-amount="100">$100</button>
+                        </div>
+                        <button class="btn btn-primary">Donar Ahora</button>
+                    </div>
+                    <div class="donation-card featured">
+                        <h3>Donación Mensual</h3>
+                        <p>Conviértete en un padrino y ayuda de forma continua</p>
+                        <div class="monthly-amount">
+                            <span>$</span>
+                            <input type="number" value="15" min="5">
+                            <span>/mes</span>
+                        </div>
+                        <button class="btn btn-primary">Ser Padrino</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Refugio Esperanza Canina</h3>
+                    <p>Dedicados a rescatar y encontrar hogares amorosos para perros abandonados desde 2019.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@esperanzacanina.org</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Horarios</h3>
+                    <div class="hours">
+                        <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                        <p>Sábados: 10:00 AM - 4:00 PM</p>
+                        <p>Domingos: 12:00 PM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Refugio Esperanza Canina. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
