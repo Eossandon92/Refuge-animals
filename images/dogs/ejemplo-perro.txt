@@ -1,0 +1,14 @@
+INSTRUCCIONES PARA AGREGAR IMÁGENES:
+
+1. Coloca las fotos de tus perros en esta carpeta (images/dogs/)
+2. Usa nombres descriptivos como: max-pastor-aleman.jpg
+3. Formatos aceptados: .jpg, .jpeg, .png, .gif, .webp
+4. Tamaño recomendado: mínimo 500x500 píxeles
+
+Ejemplo de nombres de archivo:
+- luna-mestizo.jpg
+- rocky-labrador.png  
+- bella-chihuahua.jpg
+- charlie-beagle.webp
+
+Una vez que tengas las imágenes aquí, usa el panel de administración para agregar los perros.

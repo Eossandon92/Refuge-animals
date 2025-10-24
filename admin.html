@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Refugio Esperanza Canina</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1><i class="fas fa-paw"></i> Panel de Administración</h1>
+            <a href="index.html" class="btn btn-secondary">
+                <i class="fas fa-home"></i> Ver Sitio Web
+            </a>
+        </header>
+
+        <main class="admin-main">
+            <div class="admin-section">
+                <h2>Agregar Nueva Mascota</h2>
+                <form id="dogForm" class="dog-form">
+                    <div class="form-group">
+                        <label for="dogName">Nombre:</label>
+                        <input type="text" id="dogName" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dogAge">Edad:</label>
+                            <input type="text" id="dogAge" placeholder="ej: 3 años" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dogSize">Tamaño:</label>
+                            <select id="dogSize" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="Pequeño">Pequeño</option>
+                                <option value="Mediano">Mediano</option>
+                                <option value="Grande">Grande</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dogBreed">Raza:</label>
+                        <input type="text" id="dogBreed" placeholder="ej: Labrador, Mestizo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dogDescription">Descripción:</label>
+                        <textarea id="dogDescription" rows="4" placeholder="Describe la personalidad y características del perro..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dogImage">Imagen del Perro:</label>
+                        <div class="image-input-container">
+                            <input type="file" id="dogImageFile" accept="image/*" style="display: none;">
+                            <input type="text" id="dogImage" placeholder="images/dogs/nombre-perro.jpg" required>
+                            <button type="button" class="btn btn-secondary" onclick="document.getElementById('dogImageFile').click()">
+                                <i class="fas fa-upload"></i> Subir Imagen
+                            </button>
+                        </div>
+                        <small>
+                            <strong>📁 PROCESO EN 2 PASOS:</strong><br>
+                            <strong>1.</strong> Haz clic en "Subir Imagen" para generar el nombre del archivo<br>
+                            <strong>2.</strong> Guarda manualmente tu imagen en la carpeta "images/dogs/" con ese nombre<br>
+                            <em>Los navegadores no pueden guardar archivos automáticamente por seguridad</em>
+                        </small>
+                        <div id="imagePreview" class="image-preview"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Agregar Mascota
+                    </button>
+                </form>
+            </div>
+
+            <div class="admin-section">
+                <h2>Mascotas Actuales</h2>
+                <div id="currentDogs" class="current-dogs">
+                    <!-- Se cargarán dinámicamente -->
+                </div>
+            </div>
+
+            <div class="admin-section">
+                <h2>Código Generado</h2>
+                <p>Copia este código y pégalo en tu archivo <code>script.js</code> para actualizar la lista de perros:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar Código
+                    </button>
+                    <pre id="generatedCode">// El código se generará automáticamente</pre>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

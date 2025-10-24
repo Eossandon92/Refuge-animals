@@ -1,5 +1,5 @@
-// Datos de perros para mostrar
-const dogs = [
+// Cargar perros desde localStorage o usar los por defecto
+const dogs = JSON.parse(localStorage.getItem('refugioDogs')) || [
     {
         name: "Max",
         age: "3 años",
